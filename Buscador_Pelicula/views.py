@@ -1,6 +1,7 @@
 import requests
 from django.http import JsonResponse
 from django.shortcuts import render
+from .models import Pelicula
 
 # conecta a la API de OMDB
 def conectar_omdb(request):
@@ -18,3 +19,7 @@ def index(request):
 
 def pagina_index(request):
     return render(request, 'index.html')
+
+def listar_peliculas(request):
+    peliculas = Pelicula.objects.all()
+    return render(request, 'listar_peliculas.html', {'peliculas': peliculas})

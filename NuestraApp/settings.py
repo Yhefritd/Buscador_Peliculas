@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Buscador_Pelicula',  # Asegúrate de que tu aplicación esté registrada aquí
 ]
 
 MIDDLEWARE = [
