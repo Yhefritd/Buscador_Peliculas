@@ -19,6 +19,7 @@ from django.urls import path
 from Buscador_Pelicula import views  # Importa las vistas de la app directamente
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'),  # Ruta raíz que carga taquilla.html
+    path('', views.index, name='index'),                    # Taquilla.html
+    path('peliculas/', views.peliculas, name='peliculas'),  # Peliculas.html
+    path('series/', views.series, name='series'),            # Series.html
 ]

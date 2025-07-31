@@ -35,3 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Para filtrar en la carga inicial (opcional)
     filterMovies();
 });
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Script cargado y DOM listo");
+
+    const contenedor = document.querySelector("#contenedor-principal");
+    if (contenedor) {
+        contenedor.innerHTML = "<h2></h2>";
+    } else {
+        console.log("No encontré el contenedor principal");
+    }
+});
