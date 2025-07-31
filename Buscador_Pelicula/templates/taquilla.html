@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Películas</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Cinefilos</div>
+        <nav>
+            <a href="#">Películas</a>
+            <a href="#">Series</a>
+            <a href="#">Estrenos</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Cartelera</h2>
+            
+            <div class="filter-section">
+                <h3>Género</h3>
+                <div class="genres">
+                    <label><input type="checkbox" name="genre"> Acción</label>
+                    <label><input type="checkbox" name="genre"> Comedia</label>
+                    <label><input type="checkbox" name="genre"> Drama</label>
+                    <label><input type="checkbox" name="genre"> Ciencia Ficción</label>
+                    <label><input type="checkbox" name="genre"> Terror</label>
+                    <label><input type="checkbox" name="genre"> Romance</label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Año</h3>
+                <select name="year">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2022</option>
+                    <option value="2020">2022</option>
+                    <option value="2019">2022</option>
+                </select>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h1>Películas Populares</h1>
+            
+            <div class="movie-grid">
+                <div class="movie-poster">
+                    <img src="{% static 'img/superman.png' %}" alt="Superman">
+                    <p>Superman</p>
+                </div>
+                <div class="movie-poster">
+                    <img src="{% static 'img/lilo.png' %}" alt="Lilo y Stitch">
+                    <p>Lilo y Stitch</p>
+                </div>
+                <div class="movie-poster">
+                    <img src="{% static 'img/pitufo.png' %}" alt="Los Pitufos">
+                    <p>Los Pitufos</p>
+                </div>
+                <div class="movie-poster">
+                    <img src="{% static 'img/bufon.png' %}" alt="El bufon">
+                    <p>El bufon</p>
+                </div>
+                <div class="movie-poster">
+                     <img src="{% static 'img/4 fantastico.png' %}" alt="Los 4 fantastico">
+                    <p>Los 4 fantasticos</p>
+                </div>
+                <div class="movie-poster">
+                    <img src="{% static 'img/chihiro.png' %}" alt="RE: EL VIAJE DE CHIHIRO">
+                    <p>RE: EL VIAJE DE CHIHIRO</p>
+                </div>
+                <div class="movie-poster">
+                    <img src="{% static 'img/animales.png' %}" alt="ANIMALES PELIGROSOS (DOB)">
+                    <p>ANIMALES PELIGROSOS (DOB)</p>
+                </div>
+                <div class="movie-poster">
+                    <img src="{% static 'img/dragon.png' %}" alt="COMO ENTRENAR A TU DRAGÓN (DOB)">
+                    <p>COMO ENTRENAR A TU DRAGÓN (DOB)</p>
+                </div>
+                <div class="movie-poster">
+                    <img src="{% static 'img/dinosaurio.png' %}" alt="JURASSIC WORLD: RENACE (DOB)">
+                    <p>JURASSIC WORLD: RENACE (DOB)</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

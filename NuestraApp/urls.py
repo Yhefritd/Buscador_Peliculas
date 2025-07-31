@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Buscador_Pelicula import views  # Importa las vistas de la app directamente
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),  # Ruta raíz que carga taquilla.html
 ]
