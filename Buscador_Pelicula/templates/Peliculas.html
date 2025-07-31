@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Películas - Cartelera</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="Peliculas.html" style="color: white; text-decoration: none;">Cinefilos</a>
+    </div>
+    <nav>
+      <a href="Peliculas.html">Películas</a>
+      <a href="Series.html">Series</a>
+    </nav>
+  </header>
+
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Buscar película...">
+    <select id="genreSelect">
+      <option value="">Todos los géneros</option>
+      <option value="Acción">Acción</option>
+      <option value="Comedia">Comedia</option>
+      <option value="Drama">Drama</option>
+      <option value="Ciencia Ficción">Ciencia Ficción</option>
+      <option value="Terror">Terror</option>
+      <option value="Romance">Romance</option>
+    </select>
+    <select id="yearSelect">
+      <option value="">Todos los años</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+    </select>
+  </div>
+
+  <main class="main-content">
+    <h1>Películas Populares</h1>
+    <div class="movie-grid">
+      <div class="movie-poster" data-type="pelicula" data-title="Superman" data-genre="Acción" data-year="2024">
+        <img src="{% static 'img/superman.png' %}" alt="Superman">
+        <p>Superman</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="Lilo y Stitch" data-genre="Comedia" data-year="2023">
+        <img src="{% static 'img/lilo.png' %}" alt="Lilo y Stitch">
+        <p>Lilo y Stitch</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="Los Pitufos" data-genre="Comedia" data-year="2022">
+        <img src="{% static 'img/pitufo.png' %}" alt="Los Pitufos">
+        <p>Los Pitufos</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="El Bufón" data-genre="Terror" data-year="2024">
+        <img src="{% static 'img/bufon.png' %}" alt="El Bufón">
+        <p>El Bufón</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="Los 4 Fantásticos" data-genre="Acción" data-year="2022">
+        <img src="{% static 'img/4 fantastico.png' %}" alt="Los 4 Fantásticos">
+        <p>Los 4 Fantásticos</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="El Viaje de Chihiro" data-genre="Fantasía" data-year="2001">
+        <img src="{% static 'img/chihiro.png' %}" alt="El Viaje de Chihiro">
+        <p>El Viaje de Chihiro</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="Animales Peligrosos" data-genre="Drama" data-year="2023">
+        <img src="{% static 'img/animales.png' %}" alt="Animales Peligrosos">
+        <p>Animales Peligrosos</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="Cómo Entrenar a tu Dragón" data-genre="Animación" data-year="2024">
+        <img src="{% static 'img/dragon.png' %}" alt="Cómo Entrenar a tu Dragón">
+        <p>Cómo Entrenar a tu Dragón</p>
+      </div>
+      <div class="movie-poster" data-type="pelicula" data-title="Jurassic World: Renace" data-genre="Ciencia Ficción" data-year="2024">
+        <img src="{% static 'img/dinosaurio.png' %}" alt="Jurassic World: Renace">
+        <p>Jurassic World: Renace</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

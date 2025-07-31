@@ -2,94 +2,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cartelera de Películas</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
 </head>
 <body>
 
     <header>
         <div class="logo">Cinefilos</div>
         <nav>
-            <a href="#">Películas</a>
-            <a href="#">Series</a>
-            <a href="#">Estrenos</a>
+            <a href="Peliculas.html">Películas</a>
+            <a href="Series.html">Series</a>
         </nav>
     </header>
 
+    <div class="search-filters">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar películas..." />
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.5 9a7.5 7.5 0 01-0.85 7.65z" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+        </div>
+
+        <div class="select-container">
+            <select id="genreSelect">
+                <option value="">Todos</option>
+                <option value="Acción">Acción</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Drama">Drama</option>
+                <option value="Ciencia Ficción">Ciencia Ficción</option>
+                <option value="Terror">Terror</option>
+                <option value="Romance">Romance</option>
+            </select>
+        </div>
+
+        <div class="select-container">
+            <select id="yearSelect">
+                <option value="">Año</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2019">2018</option>
+                <option value="2019">2017</option>
+                <option value="2019">2016</option>
+            </select>
+        </div>
+    </div>
+
     <div class="container">
-        <aside class="sidebar">
-            <h2>Cartelera</h2>
-            
-            <div class="filter-section">
-                <h3>Género</h3>
-                <div class="genres">
-                    <label><input type="checkbox" name="genre"> Acción</label>
-                    <label><input type="checkbox" name="genre"> Comedia</label>
-                    <label><input type="checkbox" name="genre"> Drama</label>
-                    <label><input type="checkbox" name="genre"> Ciencia Ficción</label>
-                    <label><input type="checkbox" name="genre"> Terror</label>
-                    <label><input type="checkbox" name="genre"> Romance</label>
-                </div>
-            </div>
-
-            <div class="filter-section">
-                <h3>Año</h3>
-                <select name="year">
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                    <option value="2021">2022</option>
-                    <option value="2020">2022</option>
-                    <option value="2019">2022</option>
-                </select>
-            </div>
-        </aside>
-
         <main class="main-content">
             <h1>Películas Populares</h1>
             
             <div class="movie-grid">
-                <div class="movie-poster">
-                    <img src="{% static 'img/superman.png' %}" alt="Superman">
+                <div class="movie-poster" data-title="Superman" data-genre="Acción" data-year="2023">
+                    <img src="{% static 'img/superman.png' %}" alt="Superman" />
                     <p>Superman</p>
                 </div>
-                <div class="movie-poster">
-                    <img src="{% static 'img/lilo.png' %}" alt="Lilo y Stitch">
+                <div class="movie-poster" data-title="Lilo y Stitch" data-genre="Comedia" data-year="2022">
+                    <img src="{% static 'img/lilo.png' %}" alt="Lilo y Stitch" />
                     <p>Lilo y Stitch</p>
                 </div>
-                <div class="movie-poster">
-                    <img src="{% static 'img/pitufo.png' %}" alt="Los Pitufos">
+                <div class="movie-poster" data-title="Los Pitufos" data-genre="Comedia" data-year="2021">
+                    <img src="{% static 'img/pitufo.png' %}" alt="Los Pitufos" />
                     <p>Los Pitufos</p>
                 </div>
-                <div class="movie-poster">
-                    <img src="{% static 'img/bufon.png' %}" alt="El bufon">
-                    <p>El bufon</p>
+                <div class="movie-poster" data-title="El Bufón" data-genre="Drama" data-year="2023">
+                    <img src="{% static 'img/bufon.png' %}" alt="El Bufón" />
+                    <p>El Bufón</p>
                 </div>
-                <div class="movie-poster">
-                     <img src="{% static 'img/4 fantastico.png' %}" alt="Los 4 fantastico">
-                    <p>Los 4 fantasticos</p>
+                <div class="movie-poster" data-title="Los 4 fantásticos" data-genre="Acción" data-year="2020">
+                    <img src="{% static 'img/4 fantastico.png' %}" alt="Los 4 fantásticos" />
+                    <p>Los 4 fantásticos</p>
                 </div>
-                <div class="movie-poster">
-                    <img src="{% static 'img/chihiro.png' %}" alt="RE: EL VIAJE DE CHIHIRO">
-                    <p>RE: EL VIAJE DE CHIHIRO</p>
+                <div class="movie-poster" data-title="El viaje de Chihiro" data-genre="Ciencia Ficción" data-year="2019">
+                    <img src="{% static 'img/chihiro.png' %}" alt="El viaje de Chihiro" />
+                    <p>El viaje de Chihiro</p>
                 </div>
-                <div class="movie-poster">
-                    <img src="{% static 'img/animales.png' %}" alt="ANIMALES PELIGROSOS (DOB)">
-                    <p>ANIMALES PELIGROSOS (DOB)</p>
+                <div class="movie-poster" data-title="Animales Peligrosos" data-genre="Terror" data-year="2024">
+                    <img src="{% static 'img/animales.png' %}" alt="Animales Peligrosos" />
+                    <p>Animales Peligrosos</p>
                 </div>
-                <div class="movie-poster">
-                    <img src="{% static 'img/dragon.png' %}" alt="COMO ENTRENAR A TU DRAGÓN (DOB)">
-                    <p>COMO ENTRENAR A TU DRAGÓN (DOB)</p>
+                <div class="movie-poster" data-title="Como Entrenar a tu Dragón" data-genre="Acción" data-year="2023">
+                    <img src="{% static 'img/dragon.png' %}" alt="Como Entrenar a tu Dragón" />
+                    <p>Como Entrenar a tu Dragón</p>
                 </div>
-                <div class="movie-poster">
-                    <img src="{% static 'img/dinosaurio.png' %}" alt="JURASSIC WORLD: RENACE (DOB)">
-                    <p>JURASSIC WORLD: RENACE (DOB)</p>
+                <div class="movie-poster" data-title="Jurassic World: Renace" data-genre="Acción" data-year="2022">
+                    <img src="{% static 'img/dinosaurio.png' %}" alt="Jurassic World: Renace" />
+                    <p>Jurassic World: Renace</p>
                 </div>
             </div>
         </main>
     </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
 
 </body>
 </html>
