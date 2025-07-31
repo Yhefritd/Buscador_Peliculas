@@ -1,24 +1,45 @@
+# 🎬 Buscador de Películas - OMDB API
 
-# Buscador_Peliculas
-Usaremos la API de OMDB para buscar, listar y mostrar detalles básicos de películas.
+## 📌 Descripción del Proyecto
 
-## Pasos para ejecutar el proyecto
+Este proyecto es una aplicación web que permite buscar películas por nombre, consultando la API pública de [OMDB](https://www.omdbapi.com/). También permite visualizar detalles básicos como año, género, director y aplicar filtros opcionales como año o género.  
+Desarrollado bajo metodologías ágiles **Scrum** y **Extreme Programming (XP)**.
 
-1. Crear un entorno virtual:
+---
 
-python -m venv venv
+## 👥 Integrantes del equipo
 
-2. Activar el entorno virtual (en Windows PowerShell):
+| Nombre            | Rol                  |
+|-------------------|----------------------|
+| Yhefritd Huacho   | Scrum Master         |
+| Jair Urbano       | Product Owner        |
+| Yerchelo Huamani  | Developer Back-End   |
+| Fernando Dionicio | Developer Front-End  |
+| Franco Villegas   | Developer Support    |
 
-.\venv\Scripts\Activate
+---
 
-3. Instalar los requerimientos:
+## 🧠 Metodologías aplicadas
 
-pip install -r requirements.txt
+### 📌 Scrum
+- Roles claros: PO, Scrum Master y Developers.
+- Eventos realizados: Sprint Planning, Daily Meetings, Sprint Review y Retrospectiva.
+- Artefactos evidenciados: Sprint Goal, Backlog, tareas movidas por etapas.
 
-4. Ejecutar el servidor de desarrollo de Django:
+### ⚙️ XP (Extreme Programming)
+- ✅ **Pair Programming** en tareas clave (UI y API).
+- ✅ **TDD** aplicado en validaciones.
+- ✅ **Refactorizaciones** documentadas (antes/después).
+- ✅ Buenas prácticas con Git y control de versiones.
 
-python manage.py runserver
-```
+---
+
+## 🚀 Instrucciones de instalación
+
+1. Clona el repositorio:  
+   ```bash
+   git clone https://github.com/Yhefritd/Inventario-Producto.git
+   cd Inventario-Producto
+
 
 
