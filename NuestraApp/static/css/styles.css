@@ -1,0 +1,144 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header --- */
+header {
+    background-color: #1a237e;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #ffab40;
+    flex-shrink: 0;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffab40;
+}
+
+/* --- Buscador y filtros justo debajo del header --- */
+.search-filters {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;
+    gap: 30px;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-container {
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.search-container svg {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #666;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+}
+
+.select-container select {
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    cursor: pointer;
+    min-width: 140px;
+}
+
+/* --- Contenedor Principal --- */
+.container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+/* --- Contenido Principal --- */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+/* --- Cuadrícula para 4 columnas --- */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* --- Tarjetas de películas --- */
+.movie-poster {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.movie-poster:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.movie-poster p {
+    margin: 0;
+    padding: 8px 6px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    font-size: 0.85em;
+}

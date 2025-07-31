@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Buscador_Pelicula.views import conectar_omdb
+from Buscador_Pelicula import views 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('conectar_omdb/', conectar_omdb, name='conectar_omdb'),    
+    path('', views.index, name='index'), 
+    path('conectar_omdb/', views.conectar_omdb, name='conectar_omdb'),
+    path('pagina/', views.pagina_index, name='pagina_index'), 
 ]
