@@ -10,9 +10,9 @@
 <body>
 
     <header>
-        <div class="logo">Cinefilos</div>
+        <a href="{% url 'index' %}" class="logo">Cinefilos</a>
+
         <nav>
-            <a href="{% url 'index' %}">Inicio</a>
             <a href="{% url 'peliculas' %}">Películas</a>
             <a href="{% url 'series' %}">Series</a>
         </nav>
@@ -20,7 +20,7 @@
 
     <div class="search-filters">
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Buscar películas..." />
+            <input type="text" id="searchInput" placeholder="Buscar series..." />
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.5 9a7.5 7.5 0 01-0.85 7.65z" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
             </svg>
@@ -47,9 +47,9 @@
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
                 <option value="2019">2019</option>
-                <option value="2019">2018</option>
-                <option value="2019">2017</option>
-                <option value="2019">2016</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
             </select>
         </div>
     </div>
@@ -58,43 +58,55 @@
         <main class="main-content">
             <h1>Series</h1>
             <div id="contenedor-principal"></div>
-            
+
             <div class="movie-grid">
-                <div class="movie-poster" data-title="Superman" data-genre="Acción" data-year="2023">
-                    <img src="{% static 'img/superman.png' %}" alt="Superman" />
-                    <p>Superman</p>
+                <div class="movie-poster" data-title="Stranger Things" data-genre="Ciencia Ficción" data-year="2022">
+                    <img src="{% static 'img/Stranger-things.png' %}" alt="Stranger Things" />
+                    <p>Stranger Things</p>
                 </div>
-                <div class="movie-poster" data-title="Lilo y Stitch" data-genre="Comedia" data-year="2022">
-                    <img src="{% static 'img/lilo.png' %}" alt="Lilo y Stitch" />
-                    <p>Lilo y Stitch</p>
+                <div class="movie-poster" data-title="The Mandalorian" data-genre="Acción" data-year="2023">
+                    <img src="{% static 'img/the-mandalorian.jpg' %}" alt="The Mandalorian" />
+                    <p>The Mandalorian</p>
                 </div>
-                <div class="movie-poster" data-title="Los Pitufos" data-genre="Comedia" data-year="2021">
-                    <img src="{% static 'img/pitufo.png' %}" alt="Los Pitufos" />
-                    <p>Los Pitufos</p>
+                <div class="movie-poster" data-title="The Last of Us" data-genre="Drama" data-year="2023">
+                    <img src="{% static 'img/the-last-of-us.jpg' %}" alt="The Last of Us" />
+                    <p>The Last of Us</p>
                 </div>
-                <div class="movie-poster" data-title="El Bufón" data-genre="Drama" data-year="2023">
-                    <img src="{% static 'img/bufon.png' %}" alt="El Bufón" />
-                    <p>El Bufón</p>
+                <div class="movie-poster" data-title="Breaking Bad" data-genre="Drama" data-year="2013">
+                    <img src="{% static 'img/breaking-bad.jpg' %}" alt="Breaking Bad" />
+                    <p>Breaking Bad</p>
                 </div>
-                <div class="movie-poster" data-title="Los 4 fantásticos" data-genre="Acción" data-year="2020">
-                    <img src="{% static 'img/4 fantastico.png' %}" alt="Los 4 fantásticos" />
-                    <p>Los 4 fantásticos</p>
+                <div class="movie-poster" data-title="Friends" data-genre="Comedia" data-year="2004">
+                    <img src="{% static 'img/friends.jpg' %}" alt="Friends" />
+                    <p>Friends</p>
                 </div>
-                <div class="movie-poster" data-title="El viaje de Chihiro" data-genre="Ciencia Ficción" data-year="2019">
-                    <img src="{% static 'img/chihiro.png' %}" alt="El viaje de Chihiro" />
-                    <p>El viaje de Chihiro</p>
+                <div class="movie-poster" data-title="The Office" data-genre="Comedia" data-year="2008">
+                    <img src="{% static 'img/the-office.jpg' %}" alt="The Office" />
+                    <p>The Office</p>
                 </div>
-                <div class="movie-poster" data-title="Animales Peligrosos" data-genre="Terror" data-year="2024">
-                    <img src="{% static 'img/animales.png' %}" alt="Animales Peligrosos" />
-                    <p>Animales Peligrosos</p>
+                <div class="movie-poster" data-title="Dark" data-genre="Ciencia Ficción" data-year="2020">
+                    <img src="{% static 'img/dark.jpg' %}" alt="Dark" />
+                    <p>Dark</p>
                 </div>
-                <div class="movie-poster" data-title="Como Entrenar a tu Dragón" data-genre="Acción" data-year="2023">
-                    <img src="{% static 'img/dragon.png' %}" alt="Como Entrenar a tu Dragón" />
-                    <p>Como Entrenar a tu Dragón</p>
+                <div class="movie-poster" data-title="El Juego del Calamar" data-genre="Drama" data-year="2021">
+                    <img src="{% static 'img/el-juego-del-calamar.jpg' %}" alt="El Juego del Calamar" />
+                    <p>El Juego del Calamar</p>
                 </div>
-                <div class="movie-poster" data-title="Jurassic World: Renace" data-genre="Acción" data-year="2022">
-                    <img src="{% static 'img/dinosaurio.png' %}" alt="Jurassic World: Renace" />
-                    <p>Jurassic World: Renace</p>
+                <div class="movie-poster" data-title="Loki" data-genre="Acción" data-year="2021">
+                    <img src="{% static 'img/loki.jpg' %}" alt="Loki" />
+                    <p>Loki</p>
+                </div>
+                <div class="movie-poster" data-title="WandaVision" data-genre="Ciencia Ficción" data-year="2021">
+                    <img src="{% static 'img/wandavision.jpg' %}" alt="WandaVision" />
+                    <p>WandaVision</p>
+                </div>
+                <div class="movie-poster" data-title="Slasher" data-genre="Terror" data-year="2021">
+                    <img src="{% static 'img/slasher.jpg' %}" alt="Slasher" />
+                    <p>Better Call Saul</p>
+                </div>
+                <div class="movie-poster" data-title="Outlander" data-genre="Romance" data-year="2023">
+                    <img src="{% static 'img/outlander.jpg' %}" alt="Outlander" />
+                    <p>Outlander</p>
                 </div>
             </div>
         </main>

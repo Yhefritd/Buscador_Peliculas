@@ -12,7 +12,6 @@
     <header>
         <div class="logo">Cinefilos</div>
         <nav>
-            <a href="{% url 'index' %}">Inicio</a>
             <a href="{% url 'peliculas' %}">Películas</a>
             <a href="{% url 'series' %}">Series</a>
         </nav>
@@ -40,7 +39,7 @@
 
         <div class="select-container">
             <select id="yearSelect">
-                <option value="">Año</option>
+                <option value="">Todos</option>
                 <option value="2024">2024</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
@@ -139,6 +138,54 @@
                 <div class="movie-poster" data-title="destino" data-genre="terror" data-year="2017">
                     <img src="{% static 'img/destino.png' %}" alt="destino" />
                     <p>Destino final</p>
+                </div>
+                <div class="movie-poster" data-title="Stranger Things" data-genre="Ciencia Ficción" data-year="2022">
+                    <img src="{% static 'img/Stranger-things.png' %}" alt="Stranger Things" />
+                    <p>Stranger Things</p>
+                </div>
+                <div class="movie-poster" data-title="The Mandalorian" data-genre="Acción" data-year="2023">
+                    <img src="{% static 'img/the-mandalorian.jpg' %}" alt="The Mandalorian" />
+                    <p>The Mandalorian</p>
+                </div>
+                <div class="movie-poster" data-title="The Last of Us" data-genre="Drama" data-year="2023">
+                    <img src="{% static 'img/the-last-of-us.jpg' %}" alt="The Last of Us" />
+                    <p>The Last of Us</p>
+                </div>
+                <div class="movie-poster" data-title="Breaking Bad" data-genre="Drama" data-year="2013">
+                    <img src="{% static 'img/breaking-bad.jpg' %}" alt="Breaking Bad" />
+                    <p>Breaking Bad</p>
+                </div>
+                <div class="movie-poster" data-title="Friends" data-genre="Comedia" data-year="2004">
+                    <img src="{% static 'img/friends.jpg' %}" alt="Friends" />
+                    <p>Friends</p>
+                </div>
+                <div class="movie-poster" data-title="The Office" data-genre="Comedia" data-year="2008">
+                    <img src="{% static 'img/the-office.jpg' %}" alt="The Office" />
+                    <p>The Office</p>
+                </div>
+                <div class="movie-poster" data-title="Dark" data-genre="Ciencia Ficción" data-year="2020">
+                    <img src="{% static 'img/dark.jpg' %}" alt="Dark" />
+                    <p>Dark</p>
+                </div>
+                <div class="movie-poster" data-title="El Juego del Calamar" data-genre="Drama" data-year="2021">
+                    <img src="{% static 'img/el-juego-del-calamar.jpg' %}" alt="El Juego del Calamar" />
+                    <p>El Juego del Calamar</p>
+                </div>
+                <div class="movie-poster" data-title="Loki" data-genre="Acción" data-year="2021">
+                    <img src="{% static 'img/loki.jpg' %}" alt="Loki" />
+                    <p>Loki</p>
+                </div>
+                <div class="movie-poster" data-title="WandaVision" data-genre="Ciencia Ficción" data-year="2021">
+                    <img src="{% static 'img/wandavision.jpg' %}" alt="WandaVision" />
+                    <p>WandaVision</p>
+                </div>
+                <div class="movie-poster" data-title="Slasher" data-genre="Terror" data-year="2021">
+                    <img src="{% static 'img/slasher.jpg' %}" alt="Slasher" />
+                    <p>Better Call Saul</p>
+                </div>
+                <div class="movie-poster" data-title="Outlander" data-genre="Romance" data-year="2023">
+                    <img src="{% static 'img/outlander.jpg' %}" alt="Outlander" />
+                    <p>Outlander</p>
                 </div>
             </div>
         </main>
