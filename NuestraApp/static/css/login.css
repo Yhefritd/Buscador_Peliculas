@@ -1,0 +1,110 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de pantalla */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/img/fondo1.jpg'); /* Aquí puedes poner la imagen de fondo que desees */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caja de login */
+.login-box {
+    background: rgba(255, 255, 255, 0.5); /* Fondo blanco con algo de opacidad */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título del formulario */
+.login-box h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilo de los inputs */
+.textbox {
+    margin: 10px 0;
+    position: relative;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.textbox input:focus {
+    border-color: #4CAF50; /* Cambia el borde a verde al enfocarse */
+}
+
+/* Estilo de los links */
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Estilo del checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+/* Botón de login */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilo de la sección de registro */
+.register p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.register a {
+    color: #0d6f1c;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}

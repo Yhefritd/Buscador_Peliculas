@@ -16,10 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Buscador_Pelicula import views  # Importa las vistas de la app directamente
+from Buscador_Pelicula import views
 
 urlpatterns = [
-    path('', views.index, name='index'),                    # Taquilla.html
-    path('peliculas/', views.peliculas, name='peliculas'),  # Peliculas.html
-    path('series/', views.series, name='series'),            # Series.html
+    path('', views.login_view, name='index'),
+    path('registro/', views.registro_view, name='registro'),
+    path('logout/', views.logout_view, name='logout'),
+    path('taquilla/', views.taquilla, name='taquilla'),
+    path('peliculas/', views.peliculas, name='peliculas'),
+    path('series/', views.series, name='series'),
 ]
