@@ -1,28 +1,46 @@
+# 🎬 Buscador de Películas - OMDB API
 
-# Buscador_Peliculas
-Usaremos la API de OMDB para buscar, listar y mostrar detalles básicos de películas.
+## 📌 Descripción del Proyecto
 
-<img width="1881" height="918" alt="image" src="https://github.com/user-attachments/assets/80e72fd7-b302-4c78-9b62-a1c015cafa91" />
-<img width="1909" height="936" alt="image" src="https://github.com/user-attachments/assets/21bc041d-1492-4776-be43-4758201651d5" />
+Este proyecto es una aplicación web que permite buscar películas por nombre, consultando la API pública de [OMDB](https://www.omdbapi.com/). También permite visualizar detalles básicos como año, género, director y aplicar filtros opcionales como año o género.  
+Desarrollado bajo metodologías ágiles **Scrum** y **Extreme Programming (XP)**.
 
+---
 
-## Pasos para ejecutar el proyecto
+## 👥 Integrantes del equipo
 
-1. Crear un entorno virtual:
+| Nombre            | Rol                  |
+|-------------------|----------------------|
+| Yhefritd Huacho   | Scrum Master         |
+| Jair Urbano       | Product Owner        |
+| Yerchelo Huamani  | Developer Back-End   |
+| Fernando Dionicio | Developer Front-End  |
+| Franco Villegas   | Developer Support    |
 
-python -m venv venv
+---
 
-2. Activar el entorno virtual (en Windows PowerShell):
+## 🧠 Metodologías aplicadas
 
-.\venv\Scripts\Activate
+### 📌 Scrum
+- Roles claros: PO, Scrum Master y Developers.
+- Eventos realizados: Sprint Planning, Daily Meetings, Sprint Review y Retrospectiva.
+- Artefactos evidenciados: Sprint Goal, Backlog, tareas movidas por etapas.
 
-3. Instalar los requerimientos:
+### ⚙️ XP (Extreme Programming)
+- ✅ **Pair Programming** en tareas clave (UI y API).
+- ✅ **TDD** aplicado en validaciones.
+- ✅ **Refactorizaciones** documentadas (antes/después).
+- ✅ Buenas prácticas con Git y control de versiones.
 
-pip install -r requirements.txt
+---
 
-4. Ejecutar el servidor de desarrollo de Django:
+## 🚀 Instrucciones de instalación
 
-python manage.py runserver
-```
+1. Clona el repositorio:  
+   ```bash
+   git clone https://github.com/Yhefritd/Inventario-Producto.git
+   cd Inventario-Producto
+r
+
 
 
