@@ -1,4 +1,6 @@
 # 🎬 Buscador de Películas - OMDB API
+<img width="1894" height="938" alt="image" src="https://github.com/user-attachments/assets/1576cafc-f62b-4d4f-9a90-f1e0ca19b7e6" />
+<img width="1906" height="934" alt="image" src="https://github.com/user-attachments/assets/e13bf3d6-d2d7-495d-acce-9b7aa656d60a" />
 
 ## 📌 Descripción del Proyecto
 
